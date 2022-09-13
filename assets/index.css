@@ -1,0 +1,56 @@
+:root {
+    --primary-color: red;
+    --secondary-color: gray;
+    --tertiary-color:  orange;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+header {
+    padding: 10px 35px;
+    font-size: large;
+    font-weight: bold;
+}
+.forcast-head {
+    font-size: medium;
+
+}
+.forcast {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: 5px 5px 5px;
+    gap: 5px 10em;
+    align-items: start;
+    flex-direction: row;
+}
+.weather {
+    width: 100px;
+    border: 1px solid var(--tertiary-color);
+    padding: 10px;
+    margin: 5px auto 5px auto;
+    align-self: center;
+}
+.index-head {
+    font-size: medium;
+}
+.index {
+    width: 500px;
+    border: 1px solid var(--tertiary-color);
+    padding: 30px;
+    margin: 5px;
+}
+.chart-head {
+    font-size: medium;
+}
+.chart {
+    width: 500px;
+    border: 1px solid var(--tertiary-color);
+    padding: 30px;
+    margin: 5px;
+}
