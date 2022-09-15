@@ -72,6 +72,10 @@ a {
     font-weight: bold;
     
 }
+.index:hover {
+    background-color: var(--tertiary-color);
+}
+
 .button2 {
     margin: 0;
     position: absolute;
