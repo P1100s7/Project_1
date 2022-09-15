@@ -24,6 +24,13 @@ header {
 a {
     color: var(--primary-color);
 }
+button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+button:hover {
+    background-color: var(--tertiary-color);
+}
 .forecast-head {
     font-size: medium;
     text-align: center;
@@ -51,6 +58,14 @@ a {
     height: 100px;
     font-weight: bold;
 }
+.button {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 .index-head {
     font-size: medium;
     text-align: center;
@@ -67,6 +82,14 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     font-weight: bold;
+}
+.button2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .chart-head {
     font-size: medium;
