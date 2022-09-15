@@ -2,7 +2,7 @@
     --primary-color: red;
     --secondary-color: gray;
     --tertiary-color:  orange;
-    --quantiary-color: green;
+    --quandary-color: green;
 }
 * {
     margin: 0;
@@ -24,13 +24,13 @@ header {
 a {
     color: var(--primary-color);
 }
-.forcast-head {
+.forecast-head {
     font-size: medium;
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
 }
-.forcast {
+.forecast {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -46,7 +46,10 @@ a {
     padding: 10px;
     align-self: center;
     flex: 0px 0px 20%;
-    background-color: var(--quantiary-color);
+    background-color: var(--quandary-color);
+    width: 75px;
+    height: 100px;
+    font-weight: bold;
 }
 .index-head {
     font-size: medium;
@@ -63,6 +66,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-weight: bold;
 }
 .chart-head {
     font-size: medium;
@@ -76,6 +80,7 @@ a {
     border: 1px solid var(--tertiary-color);
     padding: 30px;
     margin: 5px;
+    font-weight: bold;
 }
 .footer {
     background-color: var(--tertiary-color);
