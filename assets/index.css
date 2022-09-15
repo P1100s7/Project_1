@@ -18,13 +18,17 @@ header {
     font-size: large;
     font-weight: bold;
     background-color: var(--tertiary-color);
+    border: 2px solid var(--primary-color);
+    text-align: center;
 }
 a {
     color: var(--primary-color);
 }
 .forcast-head {
     font-size: medium;
-
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
 }
 .forcast {
     display: flex;
@@ -46,6 +50,9 @@ a {
 }
 .index-head {
     font-size: medium;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
 }
 .index {
     width: 500px;
@@ -59,6 +66,9 @@ a {
 }
 .chart-head {
     font-size: medium;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
 }
 .chart {
     width: 500px;
@@ -66,18 +76,17 @@ a {
     border: 1px solid var(--tertiary-color);
     padding: 30px;
     margin: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .footer {
     background-color: var(--tertiary-color);
     position: absolute;
     bottom: 1px;
     width: 100%;
+    border: 2px solid var(--primary-color);
 }
 .feet {
     padding: 10px 10px;
+    text-decoration: underline;
 }
 .foot {
     justify-content: center;
