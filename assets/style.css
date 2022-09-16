@@ -33,11 +33,9 @@ header {
 a {
     color: var(--primary-color);
 }
-
 .button:hover {
     background-color: var(--tertiary-color);
 }
-
 .button {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -48,6 +46,7 @@ a {
     top: 20%;
     left: 50%;
     border-radius: 20px;
+    border: 2px solid var(--quandary-color);
 }
 .main
 .index-head {
@@ -67,12 +66,10 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     font-weight: bold;
-    
 }
 .index:hover {
     background-color: var(--tertiary-color);
 }
-
 .button2 {
     margin: 0;
     position: absolute;
@@ -96,6 +93,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     font-weight: bold;
+    text-align: center;
 }
 .chart:hover {
     background-color: var(--tertiary-color);
@@ -109,7 +107,6 @@ footer {
     position: absolute;
     bottom: 1px;
     width: 80%;
-    
     border: 2px solid var(--quandary-color);
 }
 .feet {
