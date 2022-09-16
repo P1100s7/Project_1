@@ -36,8 +36,8 @@ a {
 .button:hover {
     background-color: var(--tertiary-color);
 }
+/* shift this button responsibility's to button2 and remove the buttons and out puts from here to there*/
 .button {
-    background-color: var(--secondary-color);
     color: var(--primary-color);
     text-align: center;
     margin-left: 30%;
@@ -53,6 +53,7 @@ a {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
+    background-color: var(--tertiary-color);
 }
 .index {
     background-color: var(--secondary-color);
@@ -66,6 +67,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     font-weight: bold;
+    align-items: center;
 }
 .index:hover {
     background-color: var(--tertiary-color);
