@@ -16,13 +16,13 @@ const pullMarket = async () => {
 const getMarket = async () => {
     var rawMarket = pullMarket();
     //console.log(rawMarket);
-    console.log(rawMarket.);
+    console.log(rawMarket);
 
 }
 
 const getWeather = async () => {
     var rawWeather = pullWeather();
-    //console.log(rawWeather);
+    console.log(rawWeather);
 
 }
 
