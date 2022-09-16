@@ -1,8 +1,8 @@
 :root {
-    --primary-color: rgb(246, 180, 0);
-    --secondary-color: rgb(109, 50, 126);
-    --tertiary-color: rgb(102, 46, 0);
-    --quandary-color: rgb(255, 102, 0);
+    --primary-color: #171C26;
+    --secondary-color: #224D73;
+    --tertiary-color: #F24405;
+    --quandary-color: #0CF29E;
 }
 * {
     margin: 0;
