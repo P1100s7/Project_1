@@ -5,8 +5,8 @@ var daySpan = 5;
 //date ranging for stock market api
 var today = new Date().toJSON().slice(0, 10);
 var past = new Date();
-past.setDate(past.getDate() - daySpan);
-var pastDate = past.getFullYear() + '-' + (past.getMonth() + 1) + '-' + past.getDate();
+past.setDate(past.getDate() - daySpan - 1);
+var pastDate = past.getFullYear() + '-' + (past.getMonth() + 1).toString().padStart(2, "0") + '-' + past.getDate().toString().padStart(2, "0");
 //pastDate.slice(0, 10);
 console.log(pastDate);
 console.log(today);
@@ -25,7 +25,7 @@ const pullWeather = async () => {
     return weatherJson;
 }
 
-console.log('https://api.polygon.io/v2/aggs/ticker/' + ticker + '/range/1/day/' + pastDate + '/' + today + '?adjusted=true&sort=desc&limit=5000&apiKey=' + APIKey)
+console.log('https://api.polygon.io/v2/aggs/ticker/' + ticker + '/range/1/day/2022-09-08/' + today + '?adjusted=true&sort=desc&limit=5000&apiKey=' + APIKey)
 
 const pullMarket = async () => {
     //const response = await fetch('https://api.polygon.io/v2/aggs/ticker/' + ticker + '/range/1/day/2022-09-08/2022-09-16?adjusted=true&sort=desc&limit=5000&apiKey=' + APIKey);
