@@ -47,8 +47,8 @@ a {
     left: 50%;
     border-radius: 20px;
     border: 2px solid var(--quandary-color);
+    background-color: var(--secondary-color);
 }
-.main
 .index-head {
     font-size: 20px;
     text-align: center;
@@ -73,28 +73,34 @@ a {
     background-color: var(--tertiary-color);
 }
 .button2 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
+    color: var(--primary-color);
+    text-align: center;
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10 px;
+    top: 20%;
     left: 50%;
+    border-radius: 20px;
+    border: 2px solid var(--quandary-color);
 }
 .chart-head {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
+    background-color: var(--tertiary-color);
 }
-.chart {
+.chart-test {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
     border: 2px solid var(--quandary-color);
     width: 500px;
     height: 150px;
     color:var(--primary-color);
-    left: 50%;
-    right:50%;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-weight: bold;
     text-align: center;
 }
 .chart:hover {
