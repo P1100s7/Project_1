@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #171C26;
+    --secondary-color: #224D73;
+    --tertiary-color: #F24405;
+    --quandary-color: #0CF29E;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: var(--primary-color);
+    background-image: url("img_0715.jpg");
+    background-repeat: no-repeat;
+    background-attachment:  fixed;
+    background-position: 55% 45%;
+}
+header {
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right :auto;
+    width: 80%;
+    padding: 10px 35px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--tertiary-color);
+    border: 2px solid var(--quandary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+a {
+    color: var(--primary-color);
+}
+.button:hover {
+    background-color: var(--tertiary-color);
+}
+/* shift this button responsibility's to button2 and remove the buttons and out puts from here to there*/
+.button {
+    color: var(--primary-color);
+    text-align: center;
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10 px;
+    top: 20%;
+    left: 50%;
+    border-radius: 20px;
+    border: 2px solid var(--quandary-color);
+    background-color: var(--secondary-color);
+}
+.index-head {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--tertiary-color);
+}
+.index {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border: 2px solid var(--quandary-color);
+    width: 500px;
+    height: 150px;
+    color:var(--primary-color);
+    left: 50%;
+    right:50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+}
+.index:hover {
+    background-color: var(--tertiary-color);
+}
+.button2 {
+    border-radius: 20px;
+    background-position: left top;
+    background-repeat: repeat;
+    border: 2px solid var(--quandary-color);
+    color: var(--primary-color);
+    text-align: center;
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10 px;
+    top: 20%;
+    left: 50%;
+    background-color: var(--tertiary-color);
+}
+.chart-head {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--tertiary-color);
+}
+.chart-test {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border: 2px solid var(--quandary-color);
+    width: 500px;
+    height: 150px;
+    color:var(--primary-color);
+    text-align: center;
+}
+.chart:hover {
+    background-color: var(--tertiary-color);
+}
+footer {
+    border-radius: 20px;
+    margin-bottom: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--tertiary-color);
+    position: absolute;
+    bottom: 1px;
+    width: 80%;
+    border: 2px solid var(--quandary-color);
+}
+.feet {
+    padding: 10px 10px;
+    text-decoration: underline;
+}
+.foot {
+    justify-content: center;
+    margin: 5px;
+}
