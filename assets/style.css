@@ -84,7 +84,7 @@ a {
     margin-top: 10 px;
     top: 20%;
     left: 50%;
-    background-color: #F24405;
+    background-color: var(--tertiary-color);
 }
 .chart-head {
     font-size: 25px;
