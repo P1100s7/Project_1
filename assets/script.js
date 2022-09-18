@@ -7,15 +7,16 @@ var today = new Date().toJSON().slice(0, 10);
 var past = new Date();
 past.setDate(past.getDate() - daySpan - 1);
 var pastDate = past.getFullYear() + '-' + (past.getMonth() + 1).toString().padStart(2, "0") + '-' + past.getDate().toString().padStart(2, "0");
-//pastDate.slice(0, 10);
 console.log(pastDate);
 console.log(today);
 
 const pullWeather = async () => {
+    //pull weather JSON from open meteo
     const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&daily=temperature_2m_max,temperature_2m_min&temperature_unit=fahrenheit&timezone=America%2FNew_York&past_days=' + daySpan);
     const weatherJson = await response.json();
     console.log(weatherJson);
 
+    
     var tempList = [];
     for (i = 0; i <= daySpan; i++) {
         tempList[i] = weatherJson.daily.temperature_2m_max[i];
