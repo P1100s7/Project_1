@@ -38,17 +38,21 @@ const pullMarket = async () => {
 
 
 const getDeviation = async (dataSet) => {
-    //calculate and return percentage change across dataset as linear array;
-    for (i = 0; i < dataSet.length; i++) {
-        console.log(i);
-        console.log("touch");
+    //wait for async data from API call
+    const data = await dataSet;
+    //shift array right 1 space and pad [0] "0"
+    // for (i = data.length; i > 0; i--){
+    //     data[i] = data[i-1];
+    //     console.log(data);
+    // }
+    data[0] = 0;
 
+    var deviation = [];
+    for (i = 0; i < data.length; i++) {
+        deviation[i] = (data[i]-data[i-1])/data[i-1];
     }
-
+    console.log(deviation);
 }
-var temp = pullWeather();
-var close = pullMarket();
-getDeviation(temp);
-getDeviation(close);
-//getMarket();
-//getWeather();
+//getTemp();
+getDeviation(pullWeather());
+getDeviation(pullMarket());
