@@ -40,19 +40,31 @@ const pullMarket = async () => {
 const getDeviation = async (dataSet) => {
     //wait for async data from API call
     const data = await dataSet;
-    //shift array right 1 space and pad [0] "0"
-    // for (i = data.length; i > 0; i--){
-    //     data[i] = data[i-1];
-    //     console.log(data);
-    // }
-    data[0] = 0;
 
+    //calculate deviation as a percentage
     var deviation = [];
     for (i = 0; i < data.length; i++) {
-        deviation[i] = (data[i]-data[i-1])/data[i-1];
+        deviation[i] = (data[i]-data[i-1])/data[i];
     }
-    console.log(deviation);
+    console.log("deviation: " + deviation);
+    return deviation;
 }
-//getTemp();
-getDeviation(pullWeather());
-getDeviation(pullMarket());
+
+const getTradeFactor = async () => {
+
+    const tempFactor = await getDeviation(pullWeather());
+    const closeFactor = await getDeviation(pullMarket());
+    console.log(tempFactor);
+    console.log(closeFactor);
+     var tradeDivisor = []
+     var tradeFactor = 0;
+    for (i = 1; i < daySpan; i++) {
+        tradeDivisor[i-1] = closeFactor[i]/tempFactor[i];
+        tradeFactor += tradeDivisor[i];
+        console.log(tradeFactor);
+    }
+}
+
+getTradeFactor();
+
+
