@@ -51,18 +51,27 @@ const getDeviation = async (dataSet) => {
 }
 
 const getTradeFactor = async () => {
-
+    //wait for async
     const tempFactor = await getDeviation(pullWeather());
     const closeFactor = await getDeviation(pullMarket());
-    console.log(tempFactor);
-    console.log(closeFactor);
-     var tradeDivisor = []
-     var tradeFactor = 0;
-    for (i = 1; i < daySpan; i++) {
+    
+    //correlate rise in temp wit rise in closing price as a quotient
+    var tradeDivisor = []
+    for (i = 2; i < daySpan; i++) {
         tradeDivisor[i-1] = closeFactor[i]/tempFactor[i];
-        tradeFactor += tradeDivisor[i];
-        console.log(tradeFactor);
     }
+
+    //reduce(sum) result as an average confidence value
+    var tradeFactor = tradeDivisor.reduce(function(a,b){return a+b;});
+
+    //multiply confidence by tomorrow's forecast. if above zero, trade the stock
+    var tradeQuotient = tempFactor[daySpan]*tradeFactor;
+    var isTrade = false;
+    if (tradeQuotient > 0) {
+        isTrade = true;
+    }
+
+    return isTrade;
 }
 
 getTradeFactor();
