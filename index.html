@@ -1,85 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-background-black">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/bulma.css">
     <script src="./assets/script.js" defer></script>
     <title>NYC Weathers Effects on the S&P500</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
-
-	<style>
-		.bg-black-alt  {
-			background:#191919;
-		}
-		.text-black-alt  {
-			color:#191919;
-		}
-		.border-black-alt {
-			border-color: #191919;
-		}
-		
-	</style>
 </head>
 
-<body class="bg-black-alt font-sans leading-normal tracking-normal">
-    <header><a href="./index.html">The Weathers Effects on the S&P500</a></header>
-    <!-- <br>
-    <h1 class="forecast-head">The NYC Weekly Forecast</h1>
-    <div class="forecast">
-        <article class="weather">
-            monday
-        </article>
-        <article class="weather">
-            tuesday
-        </article>
-        <article class="weather">
-            wednesday
-        </article>
-        <article class="weather">
-            thursday
-        </article>
-        <article class="weather">
-            friday
-        </article>
-
+<body>
+  <div class="section column is-centered">
+    <div class="container">
+      <div class="columns is-centerd">
+    <header class="title is-1 is-half"><a href="./index.html">The Weathers Effects on the S&P500</a></header>
     </div>
-    <br> -->
+    </div>
+  </div>
     <div>
-        <!--make this h1 not a button-->
-        <h1 class="button" class="index-head"><a href="#">Todays Market and Weather Data</a></h1> 
+        <button id="submit" class="button is-success is-rounded is-green has-text-weight-bold"><a href="#">Todays Market and Weather Data</a></button> 
         <br>
-      <!--  <button class="index" type="button">
-            Calculate Recommendation
-        </button> -->
+
     </div>
     <br>
     <div>
-        <!--make this h1 not a button-->
-        <h1 class="button2" class="chart-head">The Verdict</h1>
-        <div class="chart-test">
+        <h1 class="chart-head">The Verdict</h1>
+        <div id="result" class="chart-test">
             Our Teams Recommendation
         </div>
-    </div>
-    <div class="border-b border-gray-800 p-3">
-        <h5 class="font-bold uppercase text-gray-600">temperatures</h5>
-    </div>
     <footer class="footer">
-        <h3 class="feet">Teams Mission- </h3>
+        <h3>Teams Mission- </h3>
         <br>
         <article class="foot">
               Our goal is to provide investors with the most accurate and useful information possible to assist in their investment decisions!
         </article>
-        <h4 class="feet">Contact Information- </h4>
+        <h4>Contact Information- </h4>
             <article class="foot">
             <a href="#">DontBlameUsFor@YourFailures.gov</a>
         </article>
     </footer>
-    <script>
+    <!-- <script>
 	
 	
         /*Toggle dropdown list*/
@@ -135,7 +96,7 @@
         }
     
     
-    </script>
+    </script> -->
     
 </body>
 

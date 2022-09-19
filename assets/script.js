@@ -71,9 +71,20 @@ const getTradeFactor = async () => {
         isTrade = true;
     }
 
-    return isTrade;
+    let output = document.getElementById("result");
+    if (isTrade) {
+        output.textContent = (ticker + " will go up, buy the stock tomorrow!");
+    }
+    else {
+        output.textContent = (ticker + " will go down, sell the stock tomorrow!");
+    }
 }
 
+let submit = document.getElementById("submit");
+submit.addEventListener('click', event => {
 getTradeFactor();
+console.log("click");
+
+});
 
 
